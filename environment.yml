@@ -1,0 +1,6 @@
+name: fusen_workshop
+channels:
+ - conda-forge
+dependencies:
+ - r-base=4.1
+ - r-tidyverse
