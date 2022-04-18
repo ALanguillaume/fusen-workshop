@@ -1,4 +1,4 @@
-installed_packages <- as.data.frame(installed.packages())[["Package"]]
+installed_packages <- as.data.frame(utils::installed.packages())[["Package"]]
 if ( !("fusen" %in% installed_packages) ) {
-  install.packages("fusen")
+  utils::install.packages("fusen")
 }
