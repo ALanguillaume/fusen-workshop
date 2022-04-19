@@ -1,0 +1,214 @@
+---
+title: "Package Dev 101 with {fusen}"
+subtitle: "One Rmarkdown file away from creating a package"
+output: 
+  formation::chapitre:
+    footer: "Antoine Languillaume (@ALanguillaume) - WUR R user groug"
+    url: "https://rtask.thinkr.fr"
+---
+class: slide
+
+### Antoine
+
+
+* WUR Alumnus: Formerly part of PPS and Biometris
+
+* Now happier than ever at ThinkR
+
+Our English website: https://rtask.thinkr.fr/
+
+Our Github: https://github.com/ThinkR-open/
+
+
+---
+class: slide
+
+### Getting to know you
+
+Who:
+
+--
+
+* use Rstudio?
+
+--
+
+* use Rstudio Projects?
+
+--
+
+* use Rmarkdown?
+
+--
+
+* has developed a package before?
+
+--
+
+* use git?
+
+---
+class: slide
+
+### What is good code?
+
+--
+
+* Easy to use
+
+--
+
+* Readable
+
+--
+
+* Documented
+
+--
+
+* Has explicit dependencies
+
+--
+
+* Reliable 
+
+--
+
+* Shareable
+
+
+---
+class: slide
+
+### Why write a package?
+
+Well to be able to write good code as we just defined it!
+
+The package structure meets all criteria:
+
+--
+
+- Documented -> Packages provide a standardize **documentation system**
+
+--
+
+- Explicit dependencies -> Packages provide a standardize way to deal with **dependencies**
+
+--
+
+- Reliable -> Packages provide a **testing** infrastructure
+
+--
+
+- Shareable -> Packages are the de facto **standard to share** code
+
+---
+class: slide
+
+### How to write a package?
+
+<br/>
+<br/> 
+
+> If you know how to create a Rmarkdown file, then you know how to build a package.
+
+<br/>
+<br/> 
+
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/fusen_rmd_folds_pkg.png")
+```
+
+<br/>
+<br/> 
+
+Let's use {fusen} ! An R package developed by Sébastien Rochette.
+
+---
+class: slide
+
+### What does {fusen} do ?
+
+<br/>
+<br/> 
+
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/fusen_fold_inflate.png")
+```
+
+---
+class: center middle inverse title-slide
+
+## Start a fusen project
+### Get a piece of paper
+
+---
+
+class: center middle inverse title-slide
+
+## Fill in the flat template
+### Fold your paper
+
+---
+
+class: center middle inverse title-slide
+
+## Inflate your package!
+### Blow!
+
+---
+class: slide
+
+### What just happened?
+
+```{r development-1, eval=FALSE, echo=TRUE}
+fusen::inflate(rmd = "dev/flat_cranology.Rmd")
+```
+
+--
+
+*functions*
+
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/fusen_inflate_functions.png")
+```
+
+---
+class: slide
+
+### What just happened?
+
+```{r development-1b, eval=FALSE, echo=TRUE}
+fusen::inflate(rmd = "dev/flat_cranology.Rmd")
+```
+
+*vignette*
+
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/fusen_inflate_vignette.png")
+```
+
+---
+class: slide
+
+### Try it out yourself !
+
+```{r, eval=FALSE}
+install.packages("fusen")
+```
+
+Checkout the documentation
+
+https://thinkr-open.github.io/fusen
+
+and/or the source code
+
+https://github.com/ThinkR-open/fusen
+
+
+---
+
+class: center middle inverse title-slide
+
+## Thanks!
+### Questions?
